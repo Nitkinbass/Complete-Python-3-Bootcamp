@@ -1,0 +1,12 @@
+def product_except_self(nums):
+    new_arr = []
+    if len(nums)<1: 
+        return nums
+        
+    for i in range(len(nums)):
+        p = 1
+    for j in range(len(nums)):
+        if nums[i] != nums[j]:
+            p*= nums[j]
+new_arr.append(p)
+return new_arr
